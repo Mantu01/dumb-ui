@@ -3,10 +3,11 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { FONTS } from "@/lib/constants"
-import { COMPONENTS, componentToSlug } from "@/lib/component-list"
+import { getAllComponents } from "@/lib/component-list"
 
 export function ComponentsSidebar() {
   const pathname = usePathname()
+  const components = getAllComponents()
 
   return (
     <aside
@@ -17,14 +18,13 @@ export function ComponentsSidebar() {
         COMPONENTS
       </div>
       <div className="space-y-2 md:space-y-3">
-        {COMPONENTS.map((comp, idx) => {
-          const slug = componentToSlug(comp)
-          const isActive = pathname === `/components/${slug}`
+        {components.map((comp, idx) => {
+          const isActive = pathname === `/components/${comp.slug}`
 
           return (
             <Link
-              key={comp}
-              href={`/components/${slug}`}
+              key={comp.slug}
+              href={`/components/${comp.slug}`}
               className={`block w-full text-left p-3 md:p-4 text-base md:text-lg font-black transition-all hover:scale-105 ${
                 isActive
                   ? "bg-yellow-300 text-black border-4 border-black scale-105"
@@ -34,8 +34,9 @@ export function ComponentsSidebar() {
                 fontFamily:
                   idx % 3 === 0 ? FONTS.COMIC_SANS : idx % 3 === 1 ? FONTS.TIMES_NEW_ROMAN : FONTS.PAPYRUS,
               }}
+              title={comp.description}
             >
-              {comp}
+              {comp.name}
             </Link>
           )
         })}

@@ -18,7 +18,6 @@ export function PageLayout({
   backHref = "/",
   footerText,
   className = "",
-  hasFixedFooter = false,
   noFooter = false,
 }: PageLayoutProps) {
   return (
