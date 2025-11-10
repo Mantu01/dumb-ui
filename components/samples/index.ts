@@ -2,15 +2,23 @@
 
 import { AccordionSample } from "./accordion"
 import { AlertSample } from "./alert"
+import { AvatarSample } from "./avatar"
 import { BadgeSample } from "./badge"
+import { BreadcrumbSample } from "./breadcrumb"
 import { ButtonSample } from "./button"
 import { CardSample } from "./card"
 import { CheckboxSample } from "./checkbox"
+import { DialogSample } from "./dialog"
+import { DropdownSample } from "./dropdown"
 import { InputSample } from "./input"
 import { NavbarSample } from "./navbar"
+import { PaginationSample } from "./pagination"
+import { ProgressSample } from "./progress"
 import { RadioSample } from "./radio"
 import { SelectSample } from "./select"
 import { SliderSample } from "./slider"
+import { TableSample } from "./table"
+import { ToastSample } from "./toast"
 import { TooltipSample } from "./tooltip"
 
 // import { AvatarSample } from "./avatar"
@@ -42,13 +50,13 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Alert component for notifications",
     category: "Feedback",
   },
-  // {
-  //   name: "Avatar",
-  //   slug: "avatar",
-  //   component: AvatarSample,
-  //   description: "Avatar component for user profiles",
-  //   category: "Display",
-  // },
+  {
+    name: "Avatar",
+    slug: "avatar",
+    component: AvatarSample,
+    description: "Avatar component for user profiles",
+    category: "Display",
+  },
   {
     name: "Badge",
     slug: "badge",
@@ -56,13 +64,13 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Badge component for labels",
     category: "Display",
   },
-  // {
-  //   name: "Breadcrumb",
-  //   slug: "breadcrumb",
-  //   component: BreadcrumbSample,
-  //   description: "Breadcrumb navigation component",
-  //   category: "Navigation",
-  // },
+  {
+    name: "Breadcrumb",
+    slug: "breadcrumb",
+    component: BreadcrumbSample,
+    description: "Breadcrumb navigation component",
+    category: "Navigation",
+  },
   {
     name: "Button",
     slug: "button",
@@ -84,20 +92,20 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Checkbox input component",
     category: "Form",
   },
-  // {
-  //   name: "Dialog",
-  //   slug: "dialog",
-  //   component: DialogSample,
-  //   description: "Dialog component for modals",
-  //   category: "Overlay",
-  // },
-  // {
-  //   name: "Dropdown",
-  //   slug: "dropdown",
-  //   component: DropdownSample,
-  //   description: "Dropdown component for menus",
-  //   category: "Overlay",
-  // },
+  {
+    name: "Dialog",
+    slug: "dialog",
+    component: DialogSample,
+    description: "Dialog component for modals",
+    category: "Overlay",
+  },
+  {
+    name: "Dropdown",
+    slug: "dropdown",
+    component: DropdownSample,
+    description: "Dropdown component for menus",
+    category: "Overlay",
+  },
   {
     name: "Input",
     slug: "input",
@@ -112,20 +120,20 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Navigation bar component",
     category: "Navigation",
   },
-  // {
-  //   name: "Pagination",
-  //   slug: "pagination",
-  //   component: PaginationSample,
-  //   description: "Pagination control component",
-  //   category: "Navigation",
-  // },
-  // {
-  //   name: "Progress",
-  //   slug: "progress",
-  //   component: ProgressSample,
-  //   description: "Progress bar component",
-  //   category: "Feedback",
-  // },
+  {
+    name: "Pagination",
+    slug: "pagination",
+    component: PaginationSample,
+    description: "Pagination control component",
+    category: "Navigation",
+  },
+  {
+    name: "Progress",
+    slug: "progress",
+    component: ProgressSample,
+    description: "Progress bar component",
+    category: "Feedback",
+  },
   {
     name: "Radio",
     slug: "radio",
@@ -147,34 +155,13 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Slider input component",
     category: "Form",
   },
-  // {
-  //   name: "Skeleton",
-  //   slug: "skeleton",
-  //   component: SkeletonSample,
-  //   description: "Skeleton loading placeholder",
-  //   category: "Feedback",
-  // },
-  // {
-  //   name: "Switch",
-  //   slug: "switch",
-  //   component: SwitchSample,
-  //   description: "Toggle switch component",
-  //   category: "Form",
-  // },
-  // {
-  //   name: "Table",
-  //   slug: "table",
-  //   component: TableSample,
-  //   description: "Table component for data display",
-  //   category: "Layout",
-  // },
-  // {
-  //   name: "Tabs",
-  //   slug: "tabs",
-  //   component: TabsSample,
-  //   description: "Tabs component for sectioned content",
-  //   category: "Navigation",
-  // },
+  {
+    name: "Table",
+    slug: "table",
+    component: TableSample,
+    description: "Table component for data display",
+    category: "Layout",
+  },
   {
     name: "Tooltip",
     slug: "tooltip",
@@ -182,11 +169,11 @@ export const COMPONENT_REGISTRY: ComponentConfig[] = [
     description: "Tooltip component for hints",
     category: "Overlay",
   },
-  // {
-  //   name: "Toast",
-  //   slug: "toast",
-  //   component: ToastSample,
-  //   description: "Toast component for brief notifications",
-  //   category: "Feedback",
-  // },
+  {
+    name: "Toast",
+    slug: "toast",
+    component: ToastSample,
+    description: "Toast component for brief notifications",
+    category: "Feedback",
+  },
 ]
